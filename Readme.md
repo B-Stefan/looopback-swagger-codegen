@@ -44,6 +44,7 @@ This package provide a simple way to create client libs form your loopback appli
   * response - the response from the generateClient method
 
 * generateClient (type[,opts])
+  * opts - options for the client for example you can specify the android package name see http://generator.swagger.io/explorer   
   * type - a client should be one of the following:
 ```javascript
     [
@@ -77,4 +78,3 @@ This package provide a simple way to create client libs form your loopback appli
       "typescript-node"
     ]
 ```
-    * opts - options for the client for example you can specify the android package name see http://generator.swagger.io/explorer   
