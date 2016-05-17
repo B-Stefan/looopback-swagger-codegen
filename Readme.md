@@ -45,36 +45,36 @@ This package provide a simple way to create client libs form your loopback appli
 
 * generateClient (type[,opts])
   * type - a client should be one of the following:
-    ```javascript
-          [
-            "akka-scala",
-            "android",
-            "async-scala",
-            "clojure",
-            "csharp",
-            "CsharpDotNet2",
-            "dart",
-            "dynamic-html",
-            "flash",
-            "go",
-            "html",
-            "java",
-            "javascript",
-            "javascript-closure-angular",
-            "jmeter",
-            "objc",
-            "perl",
-            "php",
-            "python",
-            "qt5cpp",
-            "ruby",
-            "scala",
-            "swagger",
-            "swagger-yaml",
-            "swift",
-            "tizen",
-            "typescript-angular",
-            "typescript-node"
-          ]
-    ```
+```javascript
+    [
+      "akka-scala",
+      "android",
+      "async-scala",
+      "clojure",
+      "csharp",
+      "CsharpDotNet2",
+      "dart",
+      "dynamic-html",
+      "flash",
+      "go",
+      "html",
+      "java",
+      "javascript",
+      "javascript-closure-angular",
+      "jmeter",
+      "objc",
+      "perl",
+      "php",
+      "python",
+      "qt5cpp",
+      "ruby",
+      "scala",
+      "swagger",
+      "swagger-yaml",
+      "swift",
+      "tizen",
+      "typescript-angular",
+      "typescript-node"
+    ]
+```
     * opts - options for the client for example you can specify the android package name see http://generator.swagger.io/explorer   
