@@ -62,10 +62,10 @@ export default class ClientGenerator {
     })
   }
 
-  generateClient(type, opts){
+  generateClient(type, opts, swaggerSpec){
 
     return new Promise ((resolve,reject)=>{
-          let swaggerSpec = generateSwaggerSpec(this.app)
+          let swaggerSpec = swaggerSpec ? swaggerSpec : generateSwaggerSpec(this.app)
           let url = ClientGenerator.BASE_URL_CLIENTS + type;
           opts.spec = swaggerSpec
           request.post({
