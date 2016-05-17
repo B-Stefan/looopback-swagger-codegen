@@ -20,7 +20,7 @@ describe('ClientGenerator', function() {
         let opts = {
 
         }
-        return instance.generarteAndroidClient(opts).then((response)=>{
+        return instance.generateAndroidClient(opts).then((response)=>{
             expect(response).to.have.property('link');
             expect(response.link).to.be.not.empty
         })
@@ -36,7 +36,7 @@ describe('ClientGenerator', function() {
         after(function(){
            fs.unlink(path);
         })
-        return instance.generarteAndroidClient(opts).then((response)=>{
+        return instance.generateAndroidClient(opts).then((response)=>{
             return instance.downloadClient(path,response).then(()=>{
                 let stat = fs.statSync(path)
                 expect(stat).to.be.not.equal(null);
@@ -58,7 +58,7 @@ describe('ClientGenerator', function() {
       })
 
 
-      return instance.generarteAndroidClient(opts).then((response)=>{
+      return instance.generateAndroidClient(opts).then((response)=>{
           return instance.downloadClient(zipFilepath,response).then(()=>{
               return instance.unzipClient(zipFilepath,destinationPath).then(()=>{
 
