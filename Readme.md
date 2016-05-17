@@ -45,7 +45,7 @@ This package provide a simple way to create client libs form your loopback appli
 
 * generateClient (type[,opts])
   * type - a client should be one of the following:
-    ```json
+    ```javascript
           [
             "akka-scala",
             "android",
