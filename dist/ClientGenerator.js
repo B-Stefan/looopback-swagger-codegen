@@ -96,11 +96,11 @@ var ClientGenerator = function () {
     }
   }, {
     key: "generateClient",
-    value: function generateClient(type, opts) {
+    value: function generateClient(type, opts, swaggerSpec) {
       var _this = this;
 
       return new Promise(function (resolve, reject) {
-        var swaggerSpec = (0, _loopbackSwagger.generateSwaggerSpec)(_this.app);
+        var swaggerSpec = swaggerSpec ? swaggerSpec : (0, _loopbackSwagger.generateSwaggerSpec)(_this.app);
         var url = ClientGenerator.BASE_URL_CLIENTS + type;
         opts.spec = swaggerSpec;
         _request2.default.post({
