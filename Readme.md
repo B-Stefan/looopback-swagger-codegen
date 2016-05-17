@@ -9,7 +9,7 @@ This package provide a simple way to create client libs form your loopback appli
 ## Examples  
 
 ```javascript
-  import {ClientGenerator} from "./src/ClientGenerator"
+  import {ClientGenerator} from "looopback-swagger-codegen"
   import {app} from "./server/server" //your loopback application
 
   const instance = ClientGenerator(app)

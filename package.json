@@ -1,6 +1,6 @@
 {
   "name": "looopback-swagger-codegen",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A code generator for loopback applications",
   "main": "dist/index.js",
   "scripts": {
