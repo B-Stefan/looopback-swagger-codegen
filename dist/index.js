@@ -12,7 +12,7 @@ Object.defineProperty(exports, "ClientGenerator", {
     return _ClientGenerator.ClientGenerator;
   }
 });
-exports.default = test;
-function test() {
-  console.log(test);
+exports.default = greeting;
+function greeting() {
+  console.log("please visit the github page ");
 }

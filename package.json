@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "dist": "./node_modules/.bin/babel src --out-dir dist ",
-    "prepublish": "npm run dist",
+    "prepublish": "npm run test && npm run dist",
     "test": "./node_modules/.bin/mocha --require babel-core/register && rm -r -f test/android-client"
   },
   "author": "Stefan B ",

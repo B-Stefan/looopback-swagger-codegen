@@ -62,7 +62,7 @@ export default class ClientGenerator {
     })
   }
 
-  generarteClient(type, opts){
+  generateClient(type, opts){
 
     return new Promise ((resolve,reject)=>{
           let swaggerSpec = generateSwaggerSpec(this.app)
@@ -82,7 +82,7 @@ export default class ClientGenerator {
           })
     })
   }
-  generarteAndroidClient(opts){
-      return this.generarteClient(ClientGenerator.CLIENT_ENUM.andorid,opts)
+  generateAndroidClient(opts){
+      return this.generateClient(ClientGenerator.CLIENT_ENUM.andorid,opts)
   }
 }

@@ -91,12 +91,12 @@ var ClientGenerator = function () {
     value: function unzipClient(zipPath, toPath) {
       if (zipPath.indexOf(".zip") == -1) throw new Error("fromPath should be an zip file your path is " + zipPath);
       return new Promise(function (resolve, reject) {
-        _fs2.default.createReadStream(zipPath).pipe(_unzip2.default.Extract({ path: toPath })).on("error", reject).on("finish", resolve);
+        _fs2.default.createReadStream(zipPath).pipe(_unzip2.default.Extract({ path: toPath })).on("error", reject).on("close", resolve);
       });
     }
   }, {
-    key: "generarteClient",
-    value: function generarteClient(type, opts) {
+    key: "generateClient",
+    value: function generateClient(type, opts) {
       var _this = this;
 
       return new Promise(function (resolve, reject) {
@@ -118,9 +118,9 @@ var ClientGenerator = function () {
       });
     }
   }, {
-    key: "generarteAndroidClient",
-    value: function generarteAndroidClient(opts) {
-      return this.generarteClient(ClientGenerator.CLIENT_ENUM.andorid, opts);
+    key: "generateAndroidClient",
+    value: function generateAndroidClient(opts) {
+      return this.generateClient(ClientGenerator.CLIENT_ENUM.andorid, opts);
     }
   }]);
 
