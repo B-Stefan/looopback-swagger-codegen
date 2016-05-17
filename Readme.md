@@ -38,14 +38,14 @@ This package provide a simple way to create client libs form your loopback appli
 * unzipClient(zipPath,destPath)
   * zipPath - path to your zip file
   * destPath - destination for the content of the zip file
-  
+
 * downloadClient (path, response)
   * path - absolute path for the zip file
   * response - the response from the generateClient method
 
 * generateClient (type[,opts])
   * type - a client should be one of the following:
-    ```javascript
+    ``` javascript
           [
             "akka-scala",
             "android",
@@ -76,5 +76,5 @@ This package provide a simple way to create client libs form your loopback appli
             "typescript-angular",
             "typescript-node"
           ]
-    ``
+    ```
     * opts - options for the client for example you can specify the android package name see http://generator.swagger.io/explorer   
